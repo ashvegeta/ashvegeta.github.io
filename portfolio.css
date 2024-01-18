@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-color: #171e28;
+  --text-color: #66fcf1;
+  --white: #ffffffe4;
+  --header-font-size: 32px;
+  --interim-header-size: 24px;
+  --iterim-subheader-size: 18px;
+  --content-font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.portfolio {
+  margin: auto 5rem;
+  display: flex;
+  gap: 3rem;
+  align-items: start;
+}
+
+.portfolio .side-content {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  max-width: 30%;
+  /* background-color: pink; */
+  gap: 2rem;
+}
+
+.portfolio .side-content .profile {
+  padding-top: 5rem;
+  vertical-align: middle;
+  width: 100%;
+  align-items: center;
+}
+
+.side-content .links {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  display: flex;
+  margin-left: 10%;
+  max-height: 30%;
+}
+
+.side-content .links a img {
+  width: 30px;
+  height: 30px;
+}
+
+.side-content .links a img.ieee {
+  min-width: 60px;
+  height: 20px;
+}
+
+.side-content .info {
+  max-height: 70%;
+  margin-left: 10%;
+}
+
+.menu {
+  margin-top: 5rem;
+}
+
+.menu ul li {
+  margin-top: 1.1rem;
+}
+
+.menu ul li a {
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition-duration: 0.2s;
+}
+
+.menu ul li a:hover {
+  font-size: large;
+  margin-left: 1rem;
+}
+
+.menu ul #menu-header a::selection {
+  color: var(--white);
+}
+
+.portfolio .main-content {
+  top: 0;
+  max-width: 70%;
+  margin-top: 6rem;
+}
+
+.portfolio .main-content .bio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content div:first {
+  margin-bottom: 4rem;
+}
+
+.main-content .sec {
+  scroll-margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.portfolio div,
+.portfolio h1,
+.portfolio h2 {
+  flex: 1;
+}
+
+.profile .name {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile .role {
+  font-weight: 450;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--white);
+}
+
+.exp {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sec h2.title {
+  font-size: var(--header-font-size);
+}
+
+.sec p {
+  color: var(--white);
+}
+
+.exp .time {
+  margin-top: 0.3rem;
+  font-style: italic;
+  font-size: var(--content-font-size);
+  font-weight: 500;
+  max-width: 20%;
+}
+
+.exp .content .company {
+  color: var(--white);
+  margin-bottom: 0.4rem;
+  font-size: var(--interim-header-size);
+  font-weight: 400;
+}
+
+.exp .content .role {
+  font-style: italic;
+  margin-bottom: 0.4rem;
+  font-size: var(--iterim-subheader-size);
+  font-weight: 700;
+}
+
+.exp .content ul {
+  color: var(--white);
+  margin-top: 1rem;
+}
+
+.exp .content ul li {
+  text-align: justify;
+  font-size: var(--content-font-size);
+  /* list-style: d; */
+  margin-bottom: 0.8rem;
+}
+
+#projects .proj {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#projects .proj .thumbnail {
+  max-width: 20%;
+}
+
+.proj .thumbnail img {
+  /* height: 50px; */
+  width: 100%;
+  height: 50%;
+  /* scale: 1.5; */
+}
+
+.proj .content .proj-title {
+  font-size: 1.4rem;
+}
+
+.proj .content .proj-content {
+  margin-top: 1rem;
+  color: var(--white);
+}
+
+.proj .content .proj-tags {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 80%;
+  color: var(--white);
+}
+
+.proj-tags div {
+  max-width: fit-content;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  border: 0.07rem var(--text-color);
+  font-size: small;
+  font-weight: 600;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+#techstack div img {
+  width: 48px;
+  height: 48px;
+}
+
+/* #techstack #ts .title {
+  color: var(--white);
+} */
+
+#techstack #ts img {
+  margin-left: 3%;
+}
+
+#techstack #ts .stack {
+  /* width: fit-content; */
+  padding: 0.5rem;
+  background-color: var(--background-color);
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+    <div class="portfolio">
+        <div class="side-content">
+            <div class="info">
+                <div class="profile">
+                    <h1 class="name">Ashik M P</h1>
+                    <h4 class="role">Software Developer</h4>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li id="menu-header" class="menu-about"><a href="#about">ABOUT</a></li>
+                        <li id="menu-header" class="menu-experience"><a href="#experience">EXPERIENCE</a></li>
+                        <li id="menu-header" class="menu-project"><a href="#projects">PROJECTS</a></li>
+                        <li id="menu-header" class="menu-techstack"><a href="#techstack">TECH STACK</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links">
+                <a href="https://www.github.com/ashvegeta"><img src="./media/github-mark-white.png"></a>
+                <a href="https://www.linkedin.com/in/ashik-mp-a7a0ab178/"><img src="./media/linkedin.png"></a>
+                <a href="https://ieeexplore.ieee.org/document/10091095"><img class="ieee" src="./media/ieee.png"></a>
+                <a href="mailto:mpashik2001@gmail.com"><img src="./media/email.png"></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="about" class="sec">
+                <h2 class="title">About</h2>
+                <p>
+                    Hi, I am Ashik M P. I am a Software Developer primarily focused on building web applications. My
+                    Interest lies mainly on Cloud-focused backend developement, aiming to build scalable and robust
+                    solutions. I have previously built APIs using NodeJs, Golang and Python leveraging cloud-based
+                    solutions like AWS.
+                </p>
+            </div>
+            <div id="experience" class="sec">
+                <h2 class="title">Experience</h2>
+                <div class="exp">
+                    <div class="time">Aug 2022 - Sep 2023</div>
+                    <div class="content">
+                        <div class="company">Shell India</div>
+                        <div class="role">Software Engineer</div>
+                        <ul>
+                            <li>Process Automation - Automating manual processes in Incident Management using
+                                Power Apps and Power
+                                Automate,
+                                reducing MTTR (Mean-Time-To-Respond) by 35%.</li>
+                            <li>
+                                Using Python and Visual Basic to implement a script, automating the process of backlog
+                                clearance
+                                in the Incident
+                                Management system, cutting down the processing time by nearly 75%.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp">
+                    <div class="time">Feb 2022 - July 2022</div>
+                    <div class="content">
+                        <div class="company">Software AG</div>
+                        <div class="role">Machine Learning Engineering Intern</div>
+                        <ul>
+                            <li>Design and implement Enterprise Knowledge Graphs (EKGs) as a primary focus to
+                                efficiently address
+                                customer-related queries.</li>
+                            <li>Usage of Knowledge Graphs to store previously resolved queries and to infer new queries.
+                                This
+                                reduces the computation
+                                overhead, compared to the usage of a Large Language Model by 30-50%.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp">
+                    <div class="time">Feb 2021 - April 2021</div>
+                    <div class="content">
+                        <div class="company">Panasonic</div>
+                        <div class="role">Data Science Intern</div>
+                        <ul>
+                            <li>Leveraged AC (Air Conditioning) data stored on the cloud, to develop novel insights on
+                                AC users.
+                            </li>
+                            <li>
+                                Utilized data analysis and visualization techniques to communicate findings and trends
+                                related to AC
+                                performance effectively.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div>View Full Resume</div> -->
+            </div>
+            <div id="projects" class="sec">
+                <h2 class="title">Projects</h2>
+                <div class="proj">
+                    <!-- <div class="thumbnail"><img src="./media/proj1-thumbnail.png" alt="thumbnail"></div> -->
+                    <div class="content">
+                        <div class="proj-title"><b>WhisperWave</b></div>
+                        <div class="proj-content">
+                            WhisperWave is simple chat application developed using Golang and AWS. The app uses various
+                            protocols like WebSockets, HTTP and AMQP to establish communication between different
+                            entities like User, Server, Message Queue and DataBase. To know more about implementation
+                            details, click <u><a
+                                    href="https://medium.com/@1ms18cs030/my-experience-in-building-a-chat-application-in-golang-f0b815d7b7ae">Here</a></u>.
+                        </div>
+                        <div class="proj-tags">
+                            <div>Golang</div>
+                            <div>AWS</div>
+                            <div>WebSockets</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj">
+                    <!-- <div class="thumbnail"><img src="./media/proj2-thumbnail.jpg" alt="thumbnail"></div> -->
+                    <div class="content">
+                        <div class="proj-title"><b>Neural Network from scratch</b></div>
+                        <div class="proj-content">
+                            Implemented Neural Networks in python without the usage of any Machine Learning/ Deep
+                            Learning libraries. A strong understanding of differential equations and object oriented
+                            programming is presented. The learning curve is visually presented in real-time through
+                            matplotlib.
+                        </div>
+                        <div class="proj-tags">
+                            <div>Python</div>
+                            <div>Numpy</div>
+                            <div>Differentials</div>
+                            <div>Matplotlib</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj">
+                    <!-- <div class="thumbnail"><img src="./media/proj3-thumbnail.jpg" alt="thumbnail"></div> -->
+                    <div class="content">
+                        <div class="proj-title"><b>Anime Scrapper and Search Index</b></div>
+                        <div class="proj-content">
+                            After watching a ton of anime, I decided to scrape and build my own anime search index. A
+                            list of 100k anime and manga is scrapped through AnimeList and AniList public API with the
+                            help of python automation script. Retreived a large colleciton of titles with the help of
+                            custom request back-off policy. A search index is built using mongo/typesense for the
+                            same.
+                        </div>
+                        <div class="proj-tags">
+                            <div>Python</div>
+                            <div>Golang</div>
+                            <div>GraphQL</div>
+                            <div>REST</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="techstack" class="sec">
+                <h2 class="title">Tech Stack</h2>
+                <div id="ts" class="languages">
+                    <div class="title">
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="stack">
+                        <img src="./media/techstack/clang.png">
+                        <img src="./media/techstack/c++.png">
+                        <img src="./media/techstack/java.png">
+                        <img src="./media/techstack/python.png">
+                        <img src="./media/techstack/golang.png">
+                        <img src="./media/techstack/javascript.png">
+                    </div>
+
+                </div>
+                <div id="ts" class="frameworks-and-libraries">
+                    <div class="title">
+                        <h3>Frameworks, Libraries and Tools</h3>
+                    </div>
+                    <div class="stack">
+                        <img src="./media/github-mark-white.png">
+                        <img src="./media/techstack/nodejs.png">
+                        <img src="./media/techstack/postgresql.png">
+                        <img src="./media/techstack/reactjs.png">
+                        <img src="./media/techstack/docker.png">
+                        <img src="./media/techstack/kubernetes.png">
+                    </div>
+
+                </div>
+                <div id="ts" class="cloud">
+                    <div class="title">
+                        <h3>Cloud</h3>
+                    </div>
+                    <div class="stack">
+                        <img src="./media/techstack/aws.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="portfolio.js"></script>
+</body>
+
+</html>
