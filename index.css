@@ -273,12 +273,18 @@ a {
   margin-left: 3%;
 }
 
-#techstack #ts img.vercel,
-#techstack #ts img.nextjs {
-  /* height: 40px; */
+#techstack #ts img.vercel {
+  height: 40px;
   width: 90px;
-  scale: 1.1;
+  scale: 0.9;
 }
+
+#techstack #ts img.nextjs {
+  height: 40px;
+  width: 90px;
+  scale: 0.8;
+}
+
 #techstack #ts .stack {
   /* width: fit-content; */
   padding: 0.5rem;
