@@ -285,6 +285,11 @@ a {
   scale: 0.8;
 }
 
+#techstack #ts img.gcp {
+  height: 40px;
+  scale: 1;
+}
+
 #techstack #ts .stack {
   /* width: fit-content; */
   padding: 0.5rem;
