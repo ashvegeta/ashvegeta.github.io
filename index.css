@@ -16,6 +16,7 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 1.2rem;
   font-style: normal;
   font-variation-settings: "slnt" 0;
   background-color: var(--background-color);
@@ -23,7 +24,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: justify;
 }
 
@@ -120,7 +121,7 @@ a {
 .portfolio .main-content {
   top: 0;
   max-width: 70%;
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .portfolio .main-content .bio {
