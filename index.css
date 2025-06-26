@@ -50,7 +50,7 @@ a {
 }
 
 .portfolio {
-  margin: auto 5rem;
+  margin: auto 3.5rem;
   display: flex;
   gap: 3rem;
   align-items: start;
@@ -60,7 +60,7 @@ a {
   display: flex;
   flex-direction: column;
   position: sticky;
-  height: 100vh;
+  height: 120vh;
   top: 0;
   max-width: 30%;
   /* background-color: pink; */
@@ -68,7 +68,7 @@ a {
 }
 
 .portfolio .side-content .profile {
-  padding-top: 5rem;
+  padding-top: 1.5rem;
   vertical-align: middle;
   width: 100%;
   align-items: center;
@@ -79,8 +79,9 @@ a {
   justify-content: flex-start;
   gap: 1.5rem;
   display: flex;
-  margin-left: 10%;
-  max-height: 30%;
+  padding-left: 1rem; 
+  max-height: 100px;   
+  flex-wrap: wrap;  
 }
 
 .side-content .links a img {
@@ -99,7 +100,7 @@ a {
 }
 
 .menu {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   font-size: large;
 }
 
@@ -148,6 +149,22 @@ a {
   font-size: 4rem;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.profile .photo {
+  border-radius: 50%;
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease; 
+}
+
+.profile .photo:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .profile .role {
@@ -342,6 +359,15 @@ a {
 @media screen and (max-width: 720px) {
   .portfolio {
     margin: auto 1rem;
+  }
+
+  .portfolio .side-content {
+    justify-content: center;
+  }
+
+  .side-content .links {
+    margin-left: 0;
+    padding: 0;
   }
 
   .portfolio .side-content .profile {
